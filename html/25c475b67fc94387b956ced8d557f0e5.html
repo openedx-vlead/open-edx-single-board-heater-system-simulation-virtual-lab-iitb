@@ -1,0 +1,99 @@
+<h1 style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;;"><a name="SECTION00520000000000000000"></a>PI Controller using Trapezoidal Approximation</h1>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Figure&nbsp;</span><a href="http://ee32-iitb.vlabs.ac.in/manual/node36.html#pi_cos" style="font-family: &quot;Times New Roman&quot;; font-size: medium;">5.5</a><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">&nbsp;shows Xcos diagram for implementing PI controller.</span></p>
+<div align="CENTER" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"><a name="pi_cos"></a><a name="1918"></a>
+<table><caption align="BOTTOM"><strong>Figure 5.5:</strong>&nbsp;Xcos for PI controller available as&nbsp;<tt>pi_ta_virtual.xcos</tt></caption>
+<tbody>
+<tr>
+<td>
+<div align="CENTER"></div>
+<img width="623" height="471" align="BOTTOM" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/pi_ta_xcos.png" alt="Image pi_ta_xcos" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">The PI controller in continuous time is given by,</span></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="33" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img165.png" alt="$\displaystyle u(t)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="200" height="64" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img166.png" alt="$\displaystyle =K \left\{e(t)+\frac{1}{\tau_i}\int_0^t e(t)dt\right\}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">5</span>.<span class="arabic">13</span>)</td>
+</tr>
+<tr>
+<td colspan="3" align="LEFT"><br />On taking the Laplace transform,we obtain
+<p></p>
+</td>
+</tr>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="33" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img165.png" alt="$\displaystyle u(t)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="147" height="64" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img167.png" alt="$\displaystyle =K\left\{1+\frac 1{\tau_i s}\right\}e(t)$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT"><a name="lt1"></a>(<span class="arabic">5</span>.<span class="arabic">14</span>)</td>
+</tr>
+<tr>
+<td colspan="3" align="LEFT"><br />By mapping controller given in equation&nbsp;<a href="http://ee32-iitb.vlabs.ac.in/manual/node36.html#lt1">5.14</a>&nbsp;to the discrete time domain using trapezoidal approximation
+<p></p>
+</td>
+</tr>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="37" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img168.png" alt="$\displaystyle u(n)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="193" height="64" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img169.png" alt="$\displaystyle =K\left\{1+\frac{T_s}{2\tau_i}\frac{z+1}{z-1}\right\}e(n)$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">5</span>.<span class="arabic">15</span>)</td>
+</tr>
+<tr>
+<td colspan="3" align="LEFT"><br />On cross multiplying, we obtain
+<p></p>
+</td>
+</tr>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="87" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img170.png" alt="$\displaystyle (z-1)u(n)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="243" height="64" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img171.png" alt="$\displaystyle =K\left\{(z-1)+\frac{T_s}{2\tau_i}(z+1)\right\}e(n)$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">5</span>.<span class="arabic">16</span>)</td>
+</tr>
+<tr>
+<td colspan="3" align="LEFT"><br />We divide by&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="12" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img172.png" alt="$ z$" /></span>&nbsp;and then by using shifting theorem, we obtain
+<p></p>
+</td>
+</tr>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="119" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img173.png" alt="$\displaystyle u(n)-u(n-1)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="360" height="64" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img174.png" alt="$\displaystyle =K\left\{e(n)-e(n-1)+\frac{T_s}{2\tau_i}e(n)+\frac{T_s}{2\tau_i}e(n-1)\right\}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">5</span>.<span class="arabic">17</span>)</td>
+</tr>
+<tr>
+<td colspan="3" align="LEFT"><br />The PI controller is usually written as
+<p></p>
+</td>
+</tr>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="37" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img168.png" alt="$\displaystyle u(n)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="248" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img175.png" alt="$\displaystyle =u(n-1)+s_0 e(n)+s_1e(n-1)$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">5</span>.<span class="arabic">18</span>)</td>
+</tr>
+<tr>
+<td colspan="3" align="LEFT"><br />where
+<p></p>
+</td>
+</tr>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="20" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img176.png" alt="$\displaystyle s_0$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="111" height="64" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img177.png" alt="$\displaystyle =K\left(1+\frac{T_s}{2\tau_i}\right)$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">5</span>.<span class="arabic">19</span>)</td>
+</tr>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="20" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img178.png" alt="$\displaystyle s_1$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="123" height="64" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img179.png" alt="$\displaystyle =K\left(-1+\frac{T_s}{2\tau_i}\right)$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">5</span>.<span class="arabic">20</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"><a name="CHILD_LINKS" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></a><strong>Subsections</strong></p>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></span></p>
+<ul class="ChildLinks" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<li><a name="tex2html700" href="http://ee32-iitb.vlabs.ac.in/manual/node37.html">Implementing locally</a></li>
+<li><a name="tex2html701" href="http://ee32-iitb.vlabs.ac.in/manual/node38.html">Implementing virtually</a></li>
+</ul>

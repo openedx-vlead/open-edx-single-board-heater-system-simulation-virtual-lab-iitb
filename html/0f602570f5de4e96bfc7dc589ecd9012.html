@@ -1,0 +1,174 @@
+<h1 style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;;"><a name="SECTION00430000000000000000"></a>Frequency Analysis of sine test data</h1>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Frequency response of a system means its steady-state response to a sinusoidal input. For obtaining a frequency response of a system, we vary the frequency of the input signal over a spectrum of interest. The analysis is useful and simple because it can be carried out with the available signal generators and measuring devices. Let us see the theory and procedure. Please note that this procedure is common for data obtained using both local and virtual experiments.</span></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Consider a sinusoidal input</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="38" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img78.png" alt="$\displaystyle U(t)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="77" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img79.png" alt="$\displaystyle = Asin \omega t$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">4</span>.<span class="arabic">1</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">The Laplace transform of the above equation yields</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="41" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img80.png" alt="$\displaystyle U(s)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="83" height="59" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img81.png" alt="$\displaystyle = \frac{A\omega}{s^2 + \omega^2}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT"><a name="lap_tran"></a>(<span class="arabic">4</span>.<span class="arabic">2</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Consider the standard first order transfer function given below</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="40" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img9.png" alt="$\displaystyle G(s)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="128" height="59" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img82.png" alt="$\displaystyle = \frac {Y(s)}{U(s)} = \frac K{s + 1}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">4</span>.<span class="arabic">3</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Replacing the value of U(s) from equation&nbsp;<a href="http://ee32-iitb.vlabs.ac.in/manual/node26.html#lap_tran">4.2</a>, we get</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="38" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img83.png" alt="$\displaystyle Y(s)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="156" height="59" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img84.png" alt="$\displaystyle = \frac{KA\omega}{(\tau s + 1)(s^2 + \omega ^2)}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">4</span>.<span class="arabic">4</span>)</td>
+</tr>
+<tr valign="MIDDLE">
+<td>&nbsp;</td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="323" height="65" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img85.png" alt="$\displaystyle =\frac{KA}{\omega ^2\tau ^2 + 1}\left[\frac{\omega \tau ^2}{\tau s +1}- \frac{\tau s \omega}{s^2 + \omega^2}+\frac{\omega}
+ {s^2 + \omega^2}\right]$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">4</span>.<span class="arabic">5</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Taking Laplace Inverse, we get</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="32" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img46.png" alt="$\displaystyle y(t)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="343" height="59" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img86.png" alt="$\displaystyle = \left[\frac {KA}{\omega^2\tau^2+ 1}\right]\left[\omega \tau e^{\frac {-t}{\tau}}-\omega \tau cos(\omega t)+
+ sin(\omega t)\right]$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">4</span>.<span class="arabic">6</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">The above equation has an exponential term&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="27" height="43" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img87.png" alt="$ e^\frac{-t}{\tau}$" /></span>. Hence, for large value of time, its value will approach to zero and the equation will yield a pure sine wave. One can also use trigonometric identities to make the equation look more simple.</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="32" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img46.png" alt="$\displaystyle y(t)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="225" height="64" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img88.png" alt="$\displaystyle = \left[\frac{KA}{\sqrt{\omega^2 \tau^2 + 1}}\right]\left[sin (\omega t) + \phi \right]$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">4</span>.<span class="arabic">7</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">where,</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="15" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img89.png" alt="$\displaystyle \phi$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="110" height="41" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img90.png" alt="$\displaystyle = -tan^{-1}(\omega \tau)$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">4</span>.<span class="arabic">8</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">By observing the above equation, one can easily make out that for a sinusoidal input the output is also sinusoidal but has some phase difference. Also, the amplitude of the output signal,&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="17" height="20" align="BOTTOM" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img91.png" alt="$ \hat{A}$" /></span>, has become a function of the input signal frequency,&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="18" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img92.png" alt="$ \omega$" /></span>.</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="17" height="41" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img93.png" alt="$\displaystyle \hat{A}$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="110" height="59" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img94.png" alt="$\displaystyle =\frac{KA}{\sqrt{\omega^2 \tau^2 + 1}}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">4</span>.<span class="arabic">9</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">The amplitude ratio (AR) can be calculated by dividing both sides by the input signal amplitude A.</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="29" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img95.png" alt="$\displaystyle AR$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="148" height="67" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img96.png" alt="$\displaystyle =\frac{\hat{A}}{A}=\frac{K}{\sqrt{\omega^2 \tau^2 + 1}}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">4</span>.<span class="arabic">10</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Dividing the above equation by the process gain K yields the normalized amplitude ratio&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="49" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img97.png" alt="$ (AR_n)$" /></span></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="36" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img98.png" alt="$\displaystyle AR_n$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="160" height="59" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img99.png" alt="$\displaystyle =\frac{AR}{K}=\frac{1}{\sqrt{\omega^2 \tau^2 + 1}}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">4</span>.<span class="arabic">11</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Because the process steady state gain is constant, the normalized amplitude ratio is often used for frequency response analysis [</span><a href="http://ee32-iitb.vlabs.ac.in/manual/node137.html#dale04" style="font-family: &quot;Times New Roman&quot;; font-size: medium;">4</a><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">].</span></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"><a name="CHILD_LINKS" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></a><strong>Subsections</strong></p>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></span></p>
+<ul class="ChildLinks" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<li><a name="tex2html572" href="http://ee32-iitb.vlabs.ac.in/manual/node27.html">Procedure</a></li>
+</ul>

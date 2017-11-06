@@ -1,0 +1,132 @@
+<div class="navigation" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"><b>Next:</b>&nbsp;<a name="tex2html512" href="http://ee32-iitb.vlabs.ac.in/manual/node21.html">Procedure</a>&nbsp;<b>Up:</b>&nbsp;<a name="tex2html510" href="http://ee32-iitb.vlabs.ac.in/manual/node17.html">Identification of Transfer Function</a>&nbsp;<b>Previous:</b>&nbsp;<a name="tex2html504" href="http://ee32-iitb.vlabs.ac.in/manual/node19.html">Conducting Ramp Test on</a>&nbsp;<br /><br /></div>
+<h1 style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;;"><a name="SECTION00330000000000000000"></a>Identifying First Order Transfer Function</h1>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">In this section we shall determine the first order transer function model using the data obtained after performing step test experiment. Please note that this procedure is common for data obtained using both local and virtual experiments.</span></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Identification of the transfer function of a system is important as it helps us to represent the physical system mathematically. Once the transfer function is obtained, one can acquire the response of the system for various inputs without actually applying them to the system. Consider the standard first order transfer function given below</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="40" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img9.png" alt="$\displaystyle G(s)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="60" height="59" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img10.png" alt="$\displaystyle = \frac{ C(s)}{ R(s)}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">3</span>.<span class="arabic">1</span>)</td>
+</tr>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="40" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img9.png" alt="$\displaystyle G(s)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="74" height="59" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img23.png" alt="$\displaystyle = \frac K{\tau s + 1}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">3</span>.<span class="arabic">2</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Combining the previous two equations, we get</span></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="39" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img12.png" alt="$\displaystyle C(s)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="113" height="64" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img55.png" alt="$\displaystyle = K \left\{\frac {R(s)}{\tau s + 1}\right\}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT"><a name="fotf"></a>(<span class="arabic">3</span>.<span class="arabic">3</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Let us consider the case of giving a ramp input to this first order system. The Laplace transform of a ramp function with slope =&nbsp;</span><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif; color: rgb(0, 0, 0); font-size: medium;"><img width="15" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img56.png" alt="$ \upsilonup$" /></span><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">is&nbsp;</span><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif; color: rgb(0, 0, 0); font-size: medium;"><img width="20" height="35" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img57.png" alt="$ \frac \upsilonup {s^2}$" /></span><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">. Substituting&nbsp;</span><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif; color: rgb(0, 0, 0); font-size: medium;"><img width="75" height="35" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img58.png" alt="$ R(s) = \frac \upsilonup {s^2}$" /></span><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">&nbsp;in equation&nbsp;</span><a href="http://ee32-iitb.vlabs.ac.in/manual/node20.html#fotf" style="font-family: &quot;Times New Roman&quot;; font-size: medium;">3.3</a><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">, we obtain</span></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="39" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img12.png" alt="$\displaystyle C(s)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="93" height="59" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img59.png" alt="$\displaystyle = \frac K{\tau s + 1}\frac \upsilonup {s^2}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">3</span>.<span class="arabic">4</span>)</td>
+</tr>
+<tr valign="MIDDLE">
+<td>&nbsp;</td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="150" height="59" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img60.png" alt="$\displaystyle = \frac A{s} + \frac B{s^2} +\frac C{\tau s + 1}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">3</span>.<span class="arabic">5</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Solving&nbsp;</span><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif; color: rgb(0, 0, 0); font-size: medium;"><img width="39" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img17.png" alt="$ C(s)$" /></span><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">&nbsp;using Heaviside expansion approach, we get</span></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="39" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img12.png" alt="$\displaystyle C(s)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="196" height="65" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img61.png" alt="$\displaystyle = K\upsilonup \left\{\frac1{s^2} - \frac \tau s + \frac {\tau^2}{\tau s + 1}\right\}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT"><a name="Heaviside"></a>(<span class="arabic">3</span>.<span class="arabic">6</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Taking the Inverse Laplace transform of the above equation, we get</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="32" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img19.png" alt="$\displaystyle c(t)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="150" height="46" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img62.png" alt="$\displaystyle = K\upsilonup \left\{t -\tau + \tau e^{\frac {-t}\tau }\right\}$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT"><a name="ct"></a>(<span class="arabic">3</span>.<span class="arabic">7</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">The difference between the reference and output signal is the error signal&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="32" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img63.png" alt="$ e(t)$" /></span>. Therefore,</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="32" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img64.png" alt="$\displaystyle e(t)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="96" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img65.png" alt="$\displaystyle = r(t) - c(t)$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">3</span>.<span class="arabic">8</span>)</td>
+</tr>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="32" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img64.png" alt="$\displaystyle e(t)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="234" height="44" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img66.png" alt="$\displaystyle = K\upsilonup t - K\upsilonup t + K\upsilonup \tau - K\upsilonup \tau e^\frac {-t}\tau$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">3</span>.<span class="arabic">9</span>)</td>
+</tr>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="32" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img64.png" alt="$\displaystyle e(t)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="121" height="44" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img67.png" alt="$\displaystyle = K\upsilonup \tau (1 - e^{\frac {-t}\tau})$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT"><a name="et"></a>(<span class="arabic">3</span>.<span class="arabic">10</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">Normalizing equation&nbsp;<a href="http://ee32-iitb.vlabs.ac.in/manual/node20.html#et">3.10</a>&nbsp;for&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="54" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img68.png" alt="$ t&gt;&gt;\tau$" /></span>, we get</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" class="mathdisplay" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<table cellpadding="0" width="100%" align="CENTER">
+<tbody>
+<tr valign="MIDDLE">
+<td nowrap="nowrap" align="RIGHT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="32" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img64.png" alt="$\displaystyle e(t)$" /></span></td>
+<td nowrap="nowrap" align="LEFT"><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="31" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img69.png" alt="$\displaystyle = \tau$" /></span></td>
+<td nowrap="nowrap" class="eqno" width="10" align="RIGHT">(<span class="arabic">3</span>.<span class="arabic">11</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">This means that the error in following the ramp input is equal to&nbsp;</span><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif; color: rgb(0, 0, 0); font-size: medium;"><img width="14" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img22.png" alt="$ \tau$" /></span><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">&nbsp;for large value of&nbsp;</span><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif; color: rgb(0, 0, 0); font-size: medium;"><img width="11" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img70.png" alt="$ t$" /></span><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">&nbsp;[</span><a href="http://ee32-iitb.vlabs.ac.in/manual/node137.html#ogt05" style="font-family: &quot;Times New Roman&quot;; font-size: medium;">3</a><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">]. Hence, smaller the time constant&nbsp;</span><span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif; color: rgb(0, 0, 0); font-size: medium;"><img width="14" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img22.png" alt="$ \tau$" /></span><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">, smaller the steady state error.</span></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<p><a name="CHILD_LINKS" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></a><strong>Subsections</strong><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></span></p>
+<ul class="ChildLinks" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<li><a name="tex2html513" href="http://ee32-iitb.vlabs.ac.in/manual/node21.html">Procedure</a></li>
+</ul>

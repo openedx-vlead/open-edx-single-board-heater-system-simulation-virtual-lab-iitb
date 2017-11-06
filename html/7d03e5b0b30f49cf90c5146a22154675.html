@@ -1,0 +1,54 @@
+<h1 style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;;"><a name="SECTION00400000000000000000"></a>Frequency Response Analysis of a Single Board Heater System by the Application of Sine Wave</h1>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">The aim of this experiment is to do a frequency response analysis of a Single Board Heater System by the application of sine wave. The target group is anyone who has basic knowledge of control engineering.</span></p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"><a name="xcos_sine"></a><a name="1044"></a>
+<table><caption align="BOTTOM"><strong>Figure 4.1:</strong>&nbsp;Xcos for local Sine Test</caption>
+<tbody>
+<tr>
+<td>
+<div align="CENTER"></div>
+<img width="555" height="344" align="BOTTOM" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/sine_test.jpg" alt="Image sine_test" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"><a name="fig:scope"></a><a name="1049"></a>
+<table><caption align="BOTTOM"><strong>Figure 4.2:</strong>&nbsp;Plot for sine input 0.007Hz</caption>
+<tbody>
+<tr>
+<td><img width="610" height="460" align="BOTTOM" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/sine-007-plot.png" alt="Image sine-007-plot" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">We have used Scilab and Xcos as an interface for sending and receiving data. Xcos diagram is shown in figure&nbsp;<a href="http://ee32-iitb.vlabs.ac.in/manual/node23.html#xcos_sine">4.1</a>. The heater current is varied sinusoidally. They are given in percentage of maximum. These inputs can be varied by setting the properties of the input block's properties in Xcos. A provision is made to set the parameters related to it like frequency, amplitude and offset. The temperature profile thus obtained is the output. In this experiment we are applying a sine change in the heater current by keeping the fan speed constant. After application of sine change, wait for sufficient amount of time to allow the temperature to reach a steady-state. The plots of their amplitude versus number of collected samples are also available on the scope windows. The output temperature profile, as read by the sensor, is also plotted. The data acquired in the process is stored on the local drive and is available to the user for further calculations.</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">In the&nbsp;<tt>sine_test.xcos</tt>&nbsp;file, open the&nbsp;<tt>sinusoid generator</tt>&nbsp;block's parameters to set the value of sine magnitude and frequency. For the experiment results shown, we have chosen Magnitude =&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="24" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img72.png" alt="$ 10$" /></span>, Frequency =&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="126" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img73.png" alt="$ 2*3.14*0.007$" /></span>. Note that the frequency is to be put in rad/sec. We keep the Phase =&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;">0</span>. There is also a provision to give the sine input with an offset in amplitude. This can be set using the&nbsp;<tt>Offset</tt>&nbsp;block. We have chosen offset of 20. The time at which the sine input is given after the experiment is started can also be set. This can be done using the&nbsp;<tt>Initial Time</tt>&nbsp;block. Open the&nbsp;<tt>Initial Time</tt>&nbsp;block's parameters. To make the sine input appear after 200 samples of start of the experiment, keep Step time =&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="33" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img74.png" alt="$ 200$" /></span>, Initial Value =&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;">0</span>&nbsp;and Final Value =&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="14" height="16" align="BOTTOM" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img75.png" alt="$ 1$" /></span>. The initial value and final value will never change for any other value of step time.</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></p>
+<div align="CENTER" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"><a name="sinedata"></a><a name="1061"></a>
+<table><caption><strong>Table 4.1:</strong>&nbsp;Data obtained after application of sine input of&nbsp;<span class="MATH" style="font-family: &quot;Century Schoolbook&quot;, serif;"><img width="70" height="34" align="MIDDLE" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img1.png" alt="$ 0.007Hz$" /></span></caption>
+<tbody>
+<tr>
+<td><img width="569" height="107" border="0" src="http://ee32-iitb.vlabs.ac.in/manual/img76.png" alt="\begin{table}
+\begin{verbatim}
+1.0 20.0 50.0 20.0 1416642805261.0
+2.0 20.0 5...
+...6557353.0
+13094.0 28.5 50.0 26.6 1416656558363.0\end{verbatim}
+\end{table}" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">The sine test data file will be saved in&nbsp;<tt>Sine_Test</tt>&nbsp;folder. The name of the file will be the date and time at which the experiment was conducted. A sample data file is provided in the same folder. The sample data file is named as&nbsp;<tt>sine-data-local.txt</tt>&nbsp;and&nbsp;<tt>sine-data-virtual.txt</tt>. Refer to the one depending on whether you are performing a local or a virtual experiment. Referring to the data file thus obtained as shown in table&nbsp;<a href="http://ee32-iitb.vlabs.ac.in/manual/node23.html#sinedata">4.1</a>, the first column in this table denotes samples. The second column in this table denotes heater in percentage. It starts at 20 and then varies sinusoidal. The third column denotes the fan in percentage. It has been held constant at 50 percent. The fourth column refers to the value of temperature. The fifth column denotes time stamp. The virtual data file will have four time stamp columns apart from first 3 columns. These four time stamp columns are client departure, server arrival, server departure and client arrival. These can be used for advanced control algorithms. These additional time stamps exist in virtual mode because of the presence of network delay.</p>
+<p style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"><a name="CHILD_LINKS" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></a><strong>Subsections</strong></p>
+<p><span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;"></span></p>
+<ul class="ChildLinks" style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium;">
+<li><a name="tex2html540" href="http://ee32-iitb.vlabs.ac.in/manual/node24.html">Conducting Sine Test on SBHS locally</a></li>
+<li><a name="tex2html541" href="http://ee32-iitb.vlabs.ac.in/manual/node25.html">Conducting Sine Test on SBHS, virtually</a></li>
+<li><a name="tex2html542" href="http://ee32-iitb.vlabs.ac.in/manual/node26.html">Frequency Analysis of sine test data</a>
+<ul>
+<li><a name="tex2html543" href="http://ee32-iitb.vlabs.ac.in/manual/node27.html">Procedure</a></li>
+</ul>
+</li>
+</ul>
