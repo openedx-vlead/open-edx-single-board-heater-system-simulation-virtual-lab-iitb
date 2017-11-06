@@ -2,6 +2,7 @@
     "course/course": {
         "advertised_start": "Anytime", 
         "cert_html_view_enabled": true, 
+        "course_image": "cooling-2864859_1920.jpg", 
         "discussion_topics": {
             "General": {
                 "id": "course"
